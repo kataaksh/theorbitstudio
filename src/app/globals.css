@@ -1,8 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap');
 @import "tailwindcss";
-.font-orbitron { font-family: 'Orbitron', sans-serif; }
-.font-spacemono { font-family: 'Space Mono', monospace; }
 
 
 :root {
@@ -47,3 +43,27 @@ body {
   animation: glow 2.5s ease-out forwards;
   pointer-events: none;
 } */
+
+
+.white-grad {
+  position: relative;
+  display: inline-block;
+  border-radius: 9999px; /* Full rounded */
+  z-index: 0;
+}
+
+.white-grad::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  padding: .5px; /* Border thickness */
+  background: linear-gradient(to right, #a8a41a, #e22f2f);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: -1;
+  pointer-events: none;
+}
