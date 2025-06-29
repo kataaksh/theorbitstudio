@@ -48,7 +48,7 @@ body {
 .white-grad {
   position: relative;
   display: inline-block;
-  border-radius: 9999px; /* Full rounded */
+  border-radius: 9999px; 
   z-index: 0;
 }
 
@@ -57,8 +57,10 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 9999px;
-  padding: .5px; /* Border thickness */
-  background: linear-gradient(to right, #a8a41a, #e22f2f);
+  padding: 2px; 
+  background: linear-gradient(to right, #f5d100, #b78c33)
+  ;
+
   mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
