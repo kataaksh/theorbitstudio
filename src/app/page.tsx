@@ -2,7 +2,7 @@
 
 import { motion, easeOut } from "framer-motion";
 import Image from "next/image";
-import { Inter, Instrument_Serif, Roboto_Mono, Syne, Chakra_Petch } from 'next/font/google'
+import { Inter, Instrument_Serif, Roboto_Mono} from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,17 +18,6 @@ const robotoMono = Roboto_Mono({
   display: 'swap',
 })
 
-const syne = Syne({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  display: 'swap',
-})
-
-const chakraPetch = Chakra_Petch({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  display: 'swap',
-})
 
 const container = {
   hidden: { opacity: 0 },
